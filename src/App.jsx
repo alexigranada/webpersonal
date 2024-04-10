@@ -3,14 +3,18 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./paginas/Homepage";
 import AboutPage from "./paginas/Aboutpage";
 import ServiciosPage from "./paginas/Serviciospage";
+import NotFoundPage from "./paginas/NotFound";
+import Navbar from "./componentes/Navbar";
 
 function App() {
   return(
     <BrowserRouter>
+    <Navbar/>
     <Routes>
       <Route path="/" element={<HomePage/>}/>
       <Route path="/servicios" element={<ServiciosPage/>}/>
       <Route path="/about" element={<AboutPage/>}/>
+      <Route path="*" element={<NotFoundPage/>}/>
     </Routes>
     </BrowserRouter>
   )

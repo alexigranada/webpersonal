@@ -1,7 +1,10 @@
 
 function HomePage() {
     return(
-        <div>Home Geomática</div>
+        <div>
+            <h1>Home Geomática</h1>
+            <p></p>
+        </div>
     )
 }
 
