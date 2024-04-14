@@ -1,6 +1,6 @@
 function ServiciosPage() {
     return(
-        <div>
+        <div className="center">
             <h2>Servicios Geomáticos</h2>
             <p>Sistemas de Información Geográfica</p>
             <p>GNSS</p>
