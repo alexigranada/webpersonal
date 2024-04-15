@@ -1,5 +1,4 @@
 
-
 function HomePage() {
     return(
         <>
@@ -10,30 +9,30 @@ function HomePage() {
             <div className="grid">
                 <a className="card">
                     <h2>
+                        SIG-BDE <span>-&gt;</span>
+                    </h2>
+                    <p>Sistemas de información Geografica y Base de Datos Espaciales</p>
+                </a>
+
+                <a className="card">
+                    <h2>
+                        AED <span>-&gt;</span>
+                    </h2>
+                    <p>Ánalisis Exploratorio de Datos variables ambientales y climatologicas</p>
+                </a>
+
+                <a className="card">
+                    <h2>
                         MDE <span>-&gt;</span>
                     </h2>
-                    <p>clic para más...</p>
+                    <p>Modelamento de </p>
                 </a>
 
                 <a className="card">
                     <h2>
-                        GSB-GIS <span>-&gt;</span>
+                        GNSS <span>-&gt;</span>
                     </h2>
-                    <p>clic para más...</p>
-                </a>
-
-                <a className="card">
-                    <h2>
-                        MDE <span>-&gt;</span>
-                    </h2>
-                    <p>clic para más...</p>
-                </a>
-
-                <a className="card">
-                    <h2>
-                        GSB-GIS <span>-&gt;</span>
-                    </h2>
-                    <p>clic para más...</p>
+                    <p>Levantamiento de información por Sistema Satelital de Navegación Global y topográfia convecional</p>
                 </a>
             </div>
         </>

@@ -5,21 +5,23 @@ import AboutPage from "./paginas/Aboutpage";
 import ServiciosPage from "./paginas/Serviciospage";
 import NotFoundPage from "./paginas/NotFound";
 import Navbar from "./componentes/Navbar";
+import Mapa from './componentes/Mapa';
 
 function App() {
   return(
-    <>
-      <main className="main">
-        <BrowserRouter>
-        <Navbar/>
-        <Routes>
-          <Route path="/" element={<HomePage/>}/>
-          <Route path="/servicios" element={<ServiciosPage/>}/>
-          <Route path="/about" element={<AboutPage/>}/>
-          <Route path="*" element={<NotFoundPage/>}/>
-        </Routes>
-        </BrowserRouter>
-      </main>
+    <><Mapa></Mapa>
+        <main className="main">
+          <BrowserRouter>
+          <Navbar/>
+          <Routes>
+            <Route path="/" element={<HomePage/>}/>
+            <Route path="/servicios" element={<ServiciosPage/>}/>
+            <Route path="/about" element={<AboutPage/>}/>
+            <Route path="*" element={<NotFoundPage/>}/>
+          </Routes>
+          </BrowserRouter>
+        </main>
+      
     </>
   )
 }
