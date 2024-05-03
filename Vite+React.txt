@@ -1,7 +1,0 @@
-:::: Para 
-npm install react-router-dom
-
-:::: Para iniciar ::::
-npm run dev
-
-:::: 

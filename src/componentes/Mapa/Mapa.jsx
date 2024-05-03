@@ -7,8 +7,8 @@ import View from 'ol/View.js';
 import XYZ from 'ol/source/XYZ';
 
 function Mapa() {
-    
     const key = 'W5lV2tLMxZAza9GGxomX#2.0/52.99805/-113.51074';
+    
     const attributionsTiles = '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> ';
 
     /**Satelital*/
@@ -18,9 +18,7 @@ function Mapa() {
       visible: true,
       source: new XYZ({
         attributions: attributionsTiles,
-        url:
-          'https://api.maptiler.com/tiles/satellite-v2/{z}/{x}/{y}.jpg?key=' +
-          key,
+        url: `https://api.maptiler.com/tiles/satellite-v2/{z}/{x}/{y}.jpg?key=${key}`,
         tilePixelRatio: 2, // THIS IS IMPORTANT
       })
     });
@@ -38,7 +36,7 @@ function Mapa() {
           rotation: 0.5,
         }),
       });
-      return () => map.setTarget(null)
+      return () => map.setTarget(null)// Limpieza al desmontar el componente
     }, []);
 
     return (

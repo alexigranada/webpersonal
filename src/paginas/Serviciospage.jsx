@@ -1,6 +1,12 @@
+import { BsTools } from "react-icons/bs";
+
 function ServiciosPage() {
     return(
-        <div>Servicios</div>
+        
+        <div className="center">
+            <h1>SERVICIOS, página en desarrollo <BsTools /></h1>
+        </div>
+        
     )
 }
 

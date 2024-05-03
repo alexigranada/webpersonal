@@ -5,24 +5,27 @@ import AboutPage from "./paginas/Aboutpage";
 import ServiciosPage from "./paginas/Serviciospage";
 import NotFoundPage from "./paginas/NotFound";
 import Navbar from "./componentes/Navbar";
-import Mapa from './componentes/Mapa';
+import Mapa from './componentes/MapLibre/MapLibre';
 
 function App() {
   return(
-    <><Mapa></Mapa>
+    <>
+      <Mapa>
+      </Mapa>
         <main className="main">
           <BrowserRouter>
           <Navbar/>
           <Routes>
             <Route path="/" element={<HomePage/>}/>
-            <Route path="/servicios" element={<ServiciosPage/>}/>
             <Route path="/about" element={<AboutPage/>}/>
+            <Route path="/servicios" element={<ServiciosPage/>}/>
             <Route path="*" element={<NotFoundPage/>}/>
           </Routes>
           </BrowserRouter>
-        </main>
-      
-    </>
+        </main>   
+        
+      </> 
+    
   )
 }
 

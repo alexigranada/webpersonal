@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import { FaCopyright } from "react-icons/fa6";
+import { FaRegCopyright } from "react-icons/fa";
 
 function Navbar() {
     return(
@@ -11,7 +13,7 @@ function Navbar() {
             
             <div> {/*className="footer" */}
                 <a>A. Granada | Área de Geomática {/**&nbsp; */}</a>
-                <a>2024 CopyRight</a>
+                <a>2024 <FaRegCopyright /></a>
             </div>
         </div>
     )
