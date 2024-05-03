@@ -5,6 +5,7 @@ function ServiciosPage() {
         
         <div className="center">
             <h1>SERVICIOS, página en desarrollo <BsTools /></h1>
+            <p>...</p>
         </div>
         
     )

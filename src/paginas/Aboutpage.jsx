@@ -16,7 +16,7 @@ function AboutPage() {
         <div className="about">
              <div>
                 <h1>Arturo A. Granada G.</h1>
-                <p>hola bienvenido a mi sitio web👋, mi nombre es Arturo y soy Ingeniero Topográfico de la Universidad del Valle. Trabajo con la gestión de datos geoespaciales: Captura, Almacenamiento y Análisis de variables ambientales y antrópicas. Mé apasiona el mundo de la programación y el desarrollo web, que en conjunto con el uso de técnicas y metodologías Geomáticas permiten la visualización y presentación de información y modelos geoespaciales. 🌎</p>
+                <p>Hola bienvenido a mi sitio web👋, mi nombre es Arturo y soy Ingeniero Topográfico de la Universidad del Valle. Trabajo con la gestión de datos geoespaciales: Captura, Almacenamiento y Análisis de variables ambientales y antrópicas. Mé apasiona el mundo de la programación y el desarrollo web, que en conjunto con el uso de técnicas y metodologías Geomáticas permiten la visualización y presentación de información y modelos geoespaciales. 🌎</p>
                 {/** Geoportales en la web para la visualización de información geoespacial */}
             </div>
             <div className="about_perfil">
