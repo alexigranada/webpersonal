@@ -1,12 +1,9 @@
 {
   "name": "vite-personal",
   "private": true,
-  "homepage": "http://localhost:5173/webpersonal",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy" : "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -14,7 +11,6 @@
   },
   "dependencies": {
     "beercss": "^3.5.5",
-    "gh-pages": "^6.1.1",
     "maplibre-gl": "^4.1.2",
     "material-dynamic-colors": "^1.1.0",
     "ol": "^9.1.0",
