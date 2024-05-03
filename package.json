@@ -1,6 +1,7 @@
 {
   "name": "vite-personal",
   "private": true,
+  "homepage": "alexigranada.github.io/webpersonal",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

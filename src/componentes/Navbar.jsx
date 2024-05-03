@@ -6,7 +6,7 @@ function Navbar() {
     return(
         <div className="description">
             <p>
-                <NavLink className={({ isActive }) => (isActive ? "active": "")} to="/">G | Geomática&nbsp;</NavLink>    
+                <NavLink to="/" className={({ isActive }) => isActive ? "active": ""}>G | Geomática&nbsp;</NavLink>    
                 <NavLink to='about'>about</NavLink>
                 <NavLink to='servicios'>servicios</NavLink>
             </p>    
