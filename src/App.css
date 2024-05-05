@@ -5,7 +5,7 @@
   justify-content: flex-start;
   align-items: center;
   padding: 1.5rem 3.5rem;
-  height: 85vh;
+  height: 82vh;
   width: 100%;
   /*background: linear-gradient(to top, transparent, rgba(var(--background-end-rgb), 0.9) 40%, rgba(var(--background-start-rgb), 1));;
   */
@@ -60,6 +60,7 @@
   grid-template-columns: repeat(4, minmax(25%, auto));
   max-width: 100%;
   width: var(--max-width);
+  gap: 0.2rem;
 }
 
 .card {
@@ -117,7 +118,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
+  padding: 6rem 0;
   font-family: var(--font-century);
 }
 
@@ -126,26 +127,35 @@
 }
 
 .about {
+  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 1.2rem 3.5rem;
+  padding: 2rem 4rem 1rem 4rem;
   font-family: var(--font-century);
-  width: 100%;
-  max-width: var(--max-width);
+}
+
+.about_grid {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  max-width: 100%;
+  width: var(--max-width);
+  gap: 0.2rem;
+  font-family: var(--font-century);
+  padding: 1rem 4rem 1rem 4rem;
 }
 
 .about_perfil {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 100%;
+  width: var(--max-width);
+}
+
+.portada {
   display: flex;
-  width: 100%;
-  max-width: var(--max-width);
   align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  /*
-  
-  flex-wrap: wrap;
-  justify-content: center;*/
+  justify-content: center;
 }
 
 .about h1 {
@@ -158,16 +168,15 @@
   opacity: 0.9;
 }
 
-.portada {
-  display: flex;
-  align-items: center;
+.about_pages {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .perfil {
-  margin-top: 1rem;
   position: relative;
   border-radius: 50%;
-  height: 9em;
+  height: 10rem;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -179,13 +188,18 @@
   filter: drop-shadow(0 0 2em #ffffff);
 }
 
+.contenedor {
+  display:flex;
+  align-items: center;
+  font-family: var(--font-century);
+}
+
 .redes {
   list-style: none;
-  margin: 1rem 0 0 1rem;
 }
 
 .redes li {
-  padding: .5rem 0 0 0.8rem;
+  padding: 0.5rem 0;
 }
 
 .contacto {
@@ -194,14 +208,11 @@
   list-style: none
 }
 
-.contacto li {
-  padding-right: 5rem;
-}
-
 .portafolio {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+  font-family: var(--font-century);
 }
 
 .portafolio ul {
@@ -210,8 +221,9 @@
 }
 
 .boton {
-  font-size: 0.9rem;
-  padding: 0.3rem 2rem;
+  font-size: 1rem;
+  padding: 0.4rem 2rem;
+  list-style: none;
   /*background-color: rgba(var(--card-rgb),0.8);
   margin: 1rem;
   
@@ -242,15 +254,22 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+
+  .main {
+    padding: 4rem 5rem 6rem 5rem;
+    height: 165vh;
+  }
+
   .content {
     padding: 4rem;
   }
 
   .grid {
+    display: grid;
     grid-template-columns: 1fr;
-    margin-bottom: 120px;
     max-width: 320px;
     text-align: center;
+    padding-bottom: 12rem;
   }
 
   .card {
@@ -259,10 +278,15 @@
 
   .card h2 {
     margin-bottom: 0.5rem;
+    font-size:larger;
   }
 
   .center {
     padding: 8rem 0 6rem;
+  }
+
+  .center h1 {
+    font-size:2rem;
   }
 
   .center::before {
@@ -307,7 +331,7 @@
     pointer-events: none;
     inset: auto 0 0;
     padding: 2rem;
-    height: 200px;
+    height: 150px;
     background: linear-gradient(
       to bottom,
       transparent 0%,
@@ -315,12 +339,91 @@
     );
     z-index: 1;
   }
+
+  .about {
+    padding: 8rem 0 1rem 0;
+  }
+
+  .about_grid {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 0;
+  }
+
+  .about_menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about_pages{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .perfil {
+    height: 7rem;
+  }
+
+  .boton {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .card {
+    padding: 0.5rem;
+    margin: 0.6rem 0.2rem;
+  }
+
+  .contacto li {
+    font-size: 0.8rem;
+  }
 }
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
+
+  .about {
+    padding: 1rem 2.5rem;
+  }
+
+  .about_perfil {
+    padding-top: 1rem;
+  }
+
+  .redes {
+    margin: 0.5rem 0 0.5rem 1rem;
+  }
+
+  .center {
+    padding: 3rem 0;
+  }
+
+  .perfil {
+    height: 7em;
+    margin-top: 0;
+  }
+
   .grid {
     grid-template-columns: repeat(2, 50%);
+  }
+
+  .card {
+    padding: 0.5rem 0;
+    font-size: small;
+  }
+
+  .redes li {
+    padding: 0.4rem 0;
+  }
+
+  .portafolio {
+    margin-top: 1.4rem;
+  }
+
+  .boton {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
   }
 }
 

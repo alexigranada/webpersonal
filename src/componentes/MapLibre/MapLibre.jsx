@@ -22,8 +22,8 @@ export default function Mapa () {
             zoom: zoom,
             bearing: 10,
             scaleControl: true,
-            fullscreenControl: "top-left",
             geolocateControl: true,
+            attributionControl: false,
             minimap: {
                 containerStyle: {
                   width: '200px',
@@ -32,9 +32,9 @@ export default function Mapa () {
             }
             
         });
-        map.current.addControl(new maplibregl.NavigationControl(), 'top-left');
+        map.current.addControl(new maplibregl.NavigationControl(), 'bottom-left');
         //map.current.addControl(new maplibregl.ScaleControl());
-        map.current.addControl(new maplibregl.FullscreenControl(), 'top-right');
+        map.current.addControl(new maplibregl.FullscreenControl(), 'bottom-right');
         
         const marker = new maplibregl.Marker({color: "#FF0000"})
             .setLngLat([-76.552,3.379])

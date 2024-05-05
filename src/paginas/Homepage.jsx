@@ -20,7 +20,7 @@ function HomePage() {
                         <h2>AED</h2>
                         <span><IoIosArrowForward /></span>
                     </div>
-                    <p>Ánalisis Exploratorio de Datos variables ambientales y climatologicas</p>
+                    <p>Análisis Exploratorio de Datos para variables ambientales y climatológicas</p>
                 </a>
                 
                 <a className="card">
@@ -28,7 +28,7 @@ function HomePage() {
                         <h2>MDE</h2> 
                         <span><IoIosArrowForward /></span>
                     </div>
-                    <p>Modelación Dinámica Espacial</p>
+                    <p>Modelación Dinámica Espacial de eventos ambientales climatológicos</p>
                 </a>
           
                 <a className="card">
@@ -36,7 +36,7 @@ function HomePage() {
                         <h2>GNSS </h2>
                         <span><IoIosArrowForward /></span>
                     </div>
-                    <p>Levantamiento de información por Sistema Satelital de Navegación Global y topográfia convencional</p>
+                    <p>Levantamiento de información por Sistema Satelital de Navegación Global y topografía convencional</p>
                 </a>
                
             </div>
